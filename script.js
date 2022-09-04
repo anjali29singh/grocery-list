@@ -42,6 +42,8 @@ function inputField() {
         quantityWarn();
     }
     else {
+        grocWarn.classList.add('hide-groc-warn');
+        quantWarn.classList.add('hide-quant-warn');
         const item = createItem(value, 'groceryItem');
         addToList(item);
         saveToLocalStorage(item);
